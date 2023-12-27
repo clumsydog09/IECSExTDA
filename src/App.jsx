@@ -2,13 +2,13 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Navbar } from "./components/Navbar";
 import { Contact, Home, Register } from "./components/pages";
-import videoBG from "../src/assets/videoBG.mp4";
+import gifBG from "../src/assets/gifBG.gif";
 
 function App() {
   return (
     <div className="App">
       <div className="overlay"></div>
-      <video src={videoBG} autoPlay loop className="videobg"></video>
+      <img src={gifBG} autoPlay loop className="gifbg"></img>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
