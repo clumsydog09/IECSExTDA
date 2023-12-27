@@ -1,7 +1,14 @@
+@font-face {
+  font-family: 'Impostograph';
+  src: url('./src/fonts/Impostograph.ttf')
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Poppins', sans-serif;
+  letter-spacing: 5px;
+  color: #fff;
+  font-family: 'Impostograph', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }

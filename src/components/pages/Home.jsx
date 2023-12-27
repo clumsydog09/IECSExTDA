@@ -1,9 +1,13 @@
 import React from "react";
+import "./Home.css";
 
 export const Home = () => {
   return (
-    <h1>
-      <div>AmongUs</div> - MIT Exclusive Hackathon!
-    </h1>
+    <div className="home">
+      <div>
+        <h1>AmongUs</h1>
+      </div>
+      <div> - MIT Exclusive Hackathon!</div>
+    </div>
   );
 };

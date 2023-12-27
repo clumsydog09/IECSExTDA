@@ -1,21 +1,20 @@
-.active {
-    background-color: #711DB0;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #111013;
+    background-color: #000;
     color: white;
+    border: 2px solid white;
+    border-radius: 6px;
     position: sticky;
     top: 0;
     height: 15%;
 }
 
 nav .title {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 1rem;
+    letter-spacing: 5px;
     font-weight: bold;
     text-decoration: none;
     color: white;
@@ -95,11 +94,27 @@ nav .menu span {
 }
 
 .register {
-    background-color: #7957ff;
-    padding: 0.6rem 1rem;
+    background-color: #000;
 }
 
 .register:hover {
     opacity: 0.6;
     transition: 0.3s;
+}
+
+.contact {
+    background-color: #363636;
+}
+
+.contact:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.button {
+    padding: 0.3rem 1rem;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 2rem;
+    height: 2.5rem;
 }
