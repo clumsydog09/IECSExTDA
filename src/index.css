@@ -1,6 +1,10 @@
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
 @font-face {
-  font-family: 'Impostograph';
-  src: url('./src/fonts/Impostograph.ttf')
+  font-family: "Impostograph";
+  src: url("./src/fonts/Impostograph.ttf");
 }
 
 * {
@@ -9,6 +13,6 @@
   padding: 0;
   letter-spacing: 5px;
   color: #fff;
-  font-family: 'Impostograph', sans-serif;
+  font-family: "Impostograph", sans-serif;
   /* font-family: 'Poppins', sans-serif; */
 }
