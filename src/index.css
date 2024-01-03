@@ -4,7 +4,7 @@
 
   @font-face {
     font-family: "Impostograph";
-    src: url("./src/fonts/Impostograph.woff2") format('woff2');
+    src: url("fonts/Impostograph.woff2") format('woff2');
   }
 
   * {

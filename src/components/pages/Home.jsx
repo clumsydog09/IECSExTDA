@@ -36,9 +36,9 @@ export const Home = () => {
     setInterval(countdown, 1000);
   }, []);
   return (
-    <div className="home">
+    <div className="flex flex-col items-center justify-center">
       <div>
-        <h1 className="text-8xl font-bold">AmongUs</h1>
+        <h1 className="text-8xl font-bold text-red-600">AmongUs</h1>
       </div>
       <div className="text-6xl">MIT Exclusive Hackathon!</div>
       <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
