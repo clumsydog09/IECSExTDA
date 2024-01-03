@@ -36,32 +36,32 @@ export const Home = () => {
     setInterval(countdown, 1000);
   }, []);
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center w-full p-4 overflow-auto">
       <div>
         <h1 className="text-8xl font-bold text-red-600">AmongUs</h1>
       </div>
-      <div className="text-6xl">MIT Exclusive Hackathon!</div>
-      <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
-        <div className="flex flex-col">
-          <span className="countdown font-mono text-5xl">
+      <div className="text-4xl sm:text-6xl">MIT Exclusive Hackathon!</div>
+      <div className="grid grid-flow-col gap-4 text-center auto-cols-max">
+        <div className="flex flex-col border-2 rounded-md p-1">
+          <span className="countdown font-mono text-3xl sm:text-5xl">
             <span style={{ "--value": days }}></span>
           </span>
           days
         </div>
-        <div className="flex flex-col">
-          <span className="countdown font-mono text-5xl">
+        <div className="flex flex-col border-2 rounded-md p-1">
+          <span className="countdown font-mono text-3xl sm:text-5xl">
             <span style={{ "--value": hours }}></span>
           </span>
           hours
         </div>
-        <div className="flex flex-col">
-          <span className="countdown font-mono text-5xl">
+        <div className="flex flex-col border-2 rounded-md p-1">
+          <span className="countdown font-mono text-3xl sm:text-5xl">
             <span style={{ "--value": minutes }}></span>
           </span>
           min
         </div>
-        <div className="flex flex-col">
-          <span className="countdown font-mono text-5xl">
+        <div className="flex flex-col border-2 rounded-md p-1">
+          <span className="countdown font-mono text-3xl sm:text-5xl">
             <span style={{ "--value": seconds }}></span>
           </span>
           sec

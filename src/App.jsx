@@ -7,7 +7,7 @@ import gifBG from "../src/assets/gifBG.gif";
 
 function App() {
   return (
-    <div className="App impostograph">
+    <div className="App impostograph w-full">
       <div className="overlay"></div>
       <img src={gifBG} autoPlay loop className="gifbg"></img>
       <Navbar />

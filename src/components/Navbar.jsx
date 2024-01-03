@@ -7,8 +7,11 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav>
-      <Link to="/" className="title">
+    <nav className="relative flex justify-center items-center sticky top-0 h-32 sm:justify-between">
+      <Link
+        to="/"
+        className="relative text-white font-bold tracking-wider title"
+      >
         IECSE x TDA
       </Link>
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
