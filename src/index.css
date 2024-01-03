@@ -2,17 +2,20 @@
   @tailwind components;
   @tailwind utilities;
 
-@font-face {
-  font-family: "Impostograph";
-  src: url("./src/fonts/Impostograph.ttf");
-}
+  @font-face {
+    font-family: "Impostograph";
+    src: url("./src/fonts/Impostograph.ttf");
+  }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 5px;
-  color: #fff;
-  font-family: "Impostograph", sans-serif;
-  /* font-family: 'Poppins', sans-serif; */
-}
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 5px;
+    color: #fff;
+    /* font-family: "Impostograph", sans-serif; */
+  }
+
+  .impostograph {
+    font-family: 'Impostograph';
+  }

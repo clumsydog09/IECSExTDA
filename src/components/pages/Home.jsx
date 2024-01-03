@@ -1,44 +1,44 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 
 export const Home = () => {
-  const [days, setDays] = useState(0)
-  const [hours, setHours] = useState(0)
-  const [minutes, setMinutes] = useState(0)
-  const [seconds, setSeconds] = useState(0)
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
   useEffect(() => {
     const countdown = () => {
-      const endDate = new Date("January 25, 2024 00:00:00").getTime()
-      const today = new Date().getTime()
+      const endDate = new Date("January 25, 2024 00:00:00").getTime();
+      const today = new Date().getTime();
 
-      const timeDiff = endDate - today
+      const timeDiff = endDate - today;
 
-      const seconds = 1000
-      const minutes = seconds * 60
-      const hours = minutes * 60
-      const days = hours * 24
+      const seconds = 1000;
+      const minutes = seconds * 60;
+      const hours = minutes * 60;
+      const days = hours * 24;
 
-      let timeDays = Math.floor(timeDiff / days)
-      let timeHours = Math.floor((timeDiff % days) / hours)
-      let timeMinutes = Math.floor((timeDiff % hours) / minutes)
-      let timeSeconds = Math.floor((timeDiff % minutes) / seconds)
+      let timeDays = Math.floor(timeDiff / days);
+      let timeHours = Math.floor((timeDiff % days) / hours);
+      let timeMinutes = Math.floor((timeDiff % hours) / minutes);
+      let timeSeconds = Math.floor((timeDiff % minutes) / seconds);
 
-      timeHours = timeHours < 10 ? "0" + timeHours : timeHours
-      timeMinutes = timeMinutes < 10 ? "0" + timeMinutes : timeMinutes
-      timeSeconds = timeSeconds < 10 ? "0" + timeSeconds : timeSeconds
+      timeHours = timeHours < 10 ? "0" + timeHours : timeHours;
+      timeMinutes = timeMinutes < 10 ? "0" + timeMinutes : timeMinutes;
+      timeSeconds = timeSeconds < 10 ? "0" + timeSeconds : timeSeconds;
 
-      setDays(timeDays)
-      setHours(timeHours)
-      setMinutes(timeMinutes)
-      setSeconds(timeSeconds)
-    }
+      setDays(timeDays);
+      setHours(timeHours);
+      setMinutes(timeMinutes);
+      setSeconds(timeSeconds);
+    };
 
-    setInterval(countdown, 1000)
-  }, [])
+    setInterval(countdown, 1000);
+  }, []);
   return (
     <div className="home">
       <div>
-        <h1 className="text-8xl">AmongUs</h1>
+        <h1 className="text-8xl font-bold">AmongUs</h1>
       </div>
       <div className="text-6xl">MIT Exclusive Hackathon!</div>
       <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
