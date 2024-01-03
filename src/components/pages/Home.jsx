@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Home.css";
+import "../../index.css";
 
 export const Home = () => {
   const [days, setDays] = useState(0);
@@ -35,10 +35,13 @@ export const Home = () => {
 
     setInterval(countdown, 1000);
   }, []);
+
   return (
-    <div className="flex flex-col items-center justify-center w-full p-4 overflow-auto">
+    <div className="flex flex-col items-center justify-center w-full p-4">
       <div>
-        <h1 className="text-8xl font-bold text-red-600">AmongUs</h1>
+        <h1 className="text-8xl font-bold bg-gradient-to-t from-red-900 to-red-500 text-transparent bg-clip-text">
+          AmongUs
+        </h1>
       </div>
       <div className="text-4xl sm:text-6xl">MIT Exclusive Hackathon!</div>
       <div className="grid grid-flow-col gap-4 text-center auto-cols-max">

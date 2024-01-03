@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-nav .title {
-  font-size: 4rem;
-  margin: 1rem;
-}
-
 nav ul {
   display: flex;
 }
@@ -18,7 +13,6 @@ nav ul li {
 nav ul li a {
   display: block;
   text-decoration: none;
-  color: #fff;
   padding: 0.5rem;
   margin: 0 0.5rem;
   border-radius: 0.5rem;
@@ -29,7 +23,7 @@ nav ul li a {
 nav .menu {
   display: none;
   position: absolute;
-  top: auto;
+  top: 2.6rem;
   right: 0.5rem;
   flex-direction: column;
   justify-content: space-between;
@@ -40,7 +34,7 @@ nav .menu {
 nav .menu span {
   height: 0.35rem;
   width: 100%;
-  background-color: white;
+  background-color: #ffffffd5;
   border-radius: 0.2rem;
 }
 
@@ -68,7 +62,16 @@ nav .menu span {
   }
 
   nav ul.open {
+    box-sizing: border-box;
     display: flex;
+    position: absolute;
+    top: 7rem;
+    border: 2px solid #ffffffd5;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #0000009b;
+
   }
 
   nav ul li {
@@ -81,32 +84,22 @@ nav .menu span {
   }
 }
 
-.register {
-  background-color: #000;
-}
-
-.register:hover {
-  opacity: 0.6;
-  transition: 0.3s;
-}
-
-.contact {
-  background-color: #000;
-}
-
-.contact:hover {
-  opacity: 0.6;
-  background-color: none;
-  transition: 0.3s;
-}
-
 .button {
   padding: 0.3rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid white;
+  border: 2px solid #ffffffd5;
   border-radius: 6px;
   font-size: 2rem;
   height: 2.5rem;
+}
+
+.button:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.button:active {
+  background-color: gray;
 }
