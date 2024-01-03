@@ -2,11 +2,6 @@
   @tailwind components;
   @tailwind utilities;
 
-  @font-face {
-    font-family: "Impostograph";
-    src: url("fonts/Impostograph.woff2") format('woff2');
-  }
-
   * {
     box-sizing: border-box;
     margin: 0;
@@ -16,6 +11,3 @@
     /* font-family: "Impostograph", sans-serif; */
   }
 
-  .impostograph {
-    font-family: 'Impostograph';
-  }

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* .App {
   background: rgb(17, 16, 19);
   background: linear-gradient(180deg, rgba(17, 16, 19, 1) 20%, rgba(26, 24, 35, 1) 52%, rgba(44, 39, 66, 1) 100%);
@@ -23,4 +27,13 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
+}
+
+@font-face {
+  font-family: "Impostograph";
+  src: url("fonts/Impostograph.woff2") format('woff2');
+}
+
+.impostograph {
+  font-family: 'Impostograph';
 }
