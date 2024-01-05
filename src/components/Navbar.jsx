@@ -63,10 +63,10 @@ export const Navbar = () => {
         </li>
         <li>
           <img
-            src="src\assets\devfolio_dark.png"
+            src="https://devfolio.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F055de5cb-e9de-43cf-a87e-c2c43bd5a671%2F_Dark.png?table=block&id=001376d2-c0f1-4312-971e-a6d3588181a2&spaceId=5bc094c8-987c-4274-938f-8a9d3fad1a04&width=870&userId=&cache=v2"
             alt="DEVFOLIO LOGO"
             srcset=""
-            className="h-[2.6rem] mr-1 mb-1"
+            className="h-[2.6rem] mr-2 mb-2"
           />
         </li>
       </ul>
