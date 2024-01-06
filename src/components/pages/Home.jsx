@@ -37,6 +37,17 @@ export const Home = () => {
     setInterval(countdown, 1000);
   }, []);
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="flex flex-col items-center justify-center w-full p-4 flex-grow">
       <div>
@@ -71,6 +82,11 @@ export const Home = () => {
           sec
         </div>
       </div>
+      <div
+        className="apply-button h-44px w-312px"
+        data-hackathon-slug="iecse-x-tda-hack"
+        data-button-theme="dark"
+      ></div>
     </div>
   );
 };
