@@ -3,7 +3,6 @@ import "./App.css";
 import "./index.css";
 import { Navbar } from "./components/Navbar";
 import { Contact, Home, Register } from "./components/pages";
-import { Partners } from "./components/pages/Partners";
 import gifBG from "../src/assets/gifBG.gif";
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/partners" element={<Partners />} />
       </Routes>
     </div>
   );

@@ -6,6 +6,7 @@ export const Home = () => {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
+
   useEffect(() => {
     const countdown = () => {
       const endDate = new Date("January 25, 2024 00:00:00").getTime();
@@ -37,7 +38,7 @@ export const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center w-full p-4">
+    <div className="flex flex-col items-center justify-center w-full p-4 flex-grow">
       <div>
         <h1 className="text-8xl font-bold bg-gradient-to-t from-red-900 to-red-500 text-transparent bg-clip-text">
           AmongUs
