@@ -84,7 +84,7 @@ export const Home = () => {
       </div>
       <div
         className="apply-button h-44px w-312px"
-        data-hackathon-slug="iecse-x-tda-hackathon"
+        data-hackathon-slug="among-us"
         data-button-theme="dark"
       ></div>
     </div>
