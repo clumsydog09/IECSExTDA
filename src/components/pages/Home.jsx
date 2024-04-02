@@ -9,7 +9,7 @@ export const Home = () => {
 
   useEffect(() => {
     const countdown = () => {
-      const endDate = new Date("January 25, 2024 00:00:00").getTime();
+      const endDate = new Date("April 14, 2024 00:00:00").getTime();
       const today = new Date().getTime();
 
       const timeDiff = endDate - today;
@@ -51,42 +51,44 @@ export const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full p-4 flex-grow">
       <div>
-        <h1 className="text-8xl font-bold bg-gradient-to-t from-red-900 to-red-500 text-transparent bg-clip-text">
+        <h1 className="text-8xl font-bold bg-gradient-to-t from-red-900 to-red-500 text-transparent bg-clip-text mb-16 ">
           AmongUs
         </h1>
       </div>
-      <div className="text-4xl sm:text-6xl">MIT Exclusive Hackathon!</div>
+      <div className="text-4xl sm:text-6xl mb-4">MIT Exclusive Hackathon!</div>
       <div className="grid grid-flow-col gap-4 text-center auto-cols-max">
-        <div className="flex flex-col border-2 rounded-md p-1">
+        <div className="flex flex-col border-2 rounded-md p-2">
           <span className="countdown font-mono text-3xl sm:text-5xl">
             <span style={{ "--value": days }}></span>
           </span>
           days
         </div>
-        <div className="flex flex-col border-2 rounded-md p-1">
+        <div className="flex flex-col border-2 rounded-md p-2">
           <span className="countdown font-mono text-3xl sm:text-5xl">
             <span style={{ "--value": hours }}></span>
           </span>
           hours
         </div>
-        <div className="flex flex-col border-2 rounded-md p-1">
+        <div className="flex flex-col border-2 rounded-md p-2">
           <span className="countdown font-mono text-3xl sm:text-5xl">
             <span style={{ "--value": minutes }}></span>
           </span>
           min
         </div>
-        <div className="flex flex-col border-2 rounded-md p-1">
+        <div className="flex flex-col border-2 rounded-md p-2">
           <span className="countdown font-mono text-3xl sm:text-5xl">
             <span style={{ "--value": seconds }}></span>
           </span>
           sec
         </div>
       </div>
-      <div
-        className="apply-button h-44px w-312px"
+      <button
+        className="h-16 w-fit border-2 border-white rounded-md mt-16 text-3xl font-bold px-4 hover:shadow-gray-500 hover:shadow-md duration-300"
         data-hackathon-slug="among-us"
         data-button-theme="dark"
-      ></div>
+      >
+        Register NOW!!!
+      </button>
     </div>
   );
 };

@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-
 import "./Navbar.css";
+import { useState } from "react";
+import Hamburger from "hamburger-react";
+
 import { Link, NavLink } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -19,19 +20,25 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className="flex justify-center items-center sticky top-0 h-32 sm:justify-between relative">
-      <Link to="/" className="m-4 text-6xl font-bold tracking-wider title">
+    <nav className="flex justify-center items-center sticky top-0 h-32 sm:justify-between">
+      <Link
+        to="/"
+        className="m-4 text-6xl font-bold tracking-wider title hover:text-white duration-500"
+      >
         IECSE
-        <span className="bg-gradient-to-t from-red-900 to-red-500 text-transparent bg-clip-text">
+        <span className="bg-gradient-to-t from-red-900 to-red-500 text-transparent bg-clip-text hover:text-white duration-500">
           {" "}
           x{" "}
         </span>
         TDA
       </Link>
-      <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
+      <div className="menu">
+        {/* <span></span>
         <span></span>
-        <span></span>
-        <span></span>
+        <span></span> */}
+        <div className="absolute right-4 -top-1 cursor-pointer w-6 h-6 text-[#FFFFFF]">
+          <Hamburger toggled={menuOpen} toggle={setMenuOpen} size={26} />
+        </div>
       </div>
       <ul className={menuOpen ? "open" : ""}>
         {/* <li>
@@ -42,17 +49,17 @@ export const Navbar = () => {
           >
             Home
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink
             to="/contact"
             className="button"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            Contact
+            Contact us
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to="/Register"
             className="button"
@@ -60,9 +67,9 @@ export const Navbar = () => {
           >
             Register
           </NavLink>
-        </li>
-         */}
-        <ul className="flex justify-center items-center space-x-4">
+        </li> */}
+
+        {/* <ul className="flex justify-center items-center space-x-4">
           <li className="transform hover:scale-90 transition duration-300 ease-in-out">
             <img
               src="https://devfolio.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F055de5cb-e9de-43cf-a87e-c2c43bd5a671%2F_Dark.png?table=block&id=001376d2-c0f1-4312-971e-a6d3588181a2&spaceId=5bc094c8-987c-4274-938f-8a9d3fad1a04&width=870&userId=&cache=v2"
@@ -84,10 +91,8 @@ export const Navbar = () => {
               className="h-[2rem] mb-2"
             />
           </li>
-        </ul>
+        </ul> */}
       </ul>
     </nav>
   );
 };
-
-
