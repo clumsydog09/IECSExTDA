@@ -82,13 +82,14 @@ export const Home = () => {
           sec
         </div>
       </div>
-      <button
+      <a
+        href="https://forms.gle/93Ds4BzzUzXk6B7o8" target="_blank" rel="noopener noreferrer"
         className="h-16 w-fit border-2 border-white rounded-md mt-16 text-3xl font-bold px-4 hover:shadow-gray-500 hover:shadow-md duration-300"
         data-hackathon-slug="among-us"
         data-button-theme="dark"
       >
         Register NOW!!!
-      </button>
+      </a>
     </div>
   );
 };
