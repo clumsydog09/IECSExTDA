@@ -83,7 +83,7 @@ export const Home = () => {
         </div>
       </div>
       <button
-        className="h-16 w-fit border-2 border-white rounded-md mt-16 text-3xl font-bold px-4 hover:shadow-gray-500 hover:shadow-md duration-300"
+        className="h-16 w-fit border-2 border-white rounded-md mt-16 text-3xl font-bold px-4 transition-opacity duration-200 hover:opacity-60 active:bg-gray-400 hover:-translate-y-1"
         data-hackathon-slug="among-us"
         data-button-theme="dark"
       >
