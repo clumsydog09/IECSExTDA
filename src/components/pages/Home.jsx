@@ -9,7 +9,7 @@ export const Home = () => {
 
   useEffect(() => {
     const countdown = () => {
-      const endDate = new Date("April 14, 2024 00:00:00").getTime();
+      const endDate = new Date("April 10, 2024 18:00:00").getTime();
       const today = new Date().getTime();
 
       const timeDiff = endDate - today;
@@ -82,13 +82,14 @@ export const Home = () => {
           sec
         </div>
       </div>
-      <button
-        className="h-16 w-fit border-2 border-white rounded-md mt-16 text-3xl font-bold px-4 transition-opacity duration-200 hover:opacity-60 active:bg-gray-400 hover:-translate-y-1"
-        data-hackathon-slug="among-us"
-        data-button-theme="dark"
+      <a
+        href="https://forms.gle/93Ds4BzzUzXk6B7o8"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="mt-16 transition-opacity duration-300 hover:opacity-60 active:bg-gray-400 inline-block px-4 py-2 border-2 border-white text-3xl text-white font-semibold rounded-md"
       >
-        Register NOW!!!
-      </button>
+        register now!!!
+      </a>
     </div>
   );
 };
