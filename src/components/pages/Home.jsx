@@ -9,7 +9,7 @@ export const Home = () => {
 
   useEffect(() => {
     const countdown = () => {
-      const endDate = new Date("April 14, 2024 00:00:00").getTime();
+      const endDate = new Date("April 10, 2024 18:00:00").getTime();
       const today = new Date().getTime();
 
       const timeDiff = endDate - today;
