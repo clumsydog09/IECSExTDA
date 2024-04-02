@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 2.6rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.rem;
+  height: 2.5rem;
+}
+
+nav .menu span {
+  height: 0.35rem;
+  width: 100%;
+  background-color: #ffffffd5;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 480px) {
+  nav .menu {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav .title {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  nav ul.open {
+    box-sizing: border-box;
+    display: flex;
+    position: absolute;
+    top: 7rem;
+    border: 2px solid #ffffffd5;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #0000009b;
+
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    margin: 0.2rem 0.5rem;
+  }
+}
+
+.button {
+  padding: 0.3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffffffd5;
+  border-radius: 6px;
+  font-size: 2rem;
+  height: 2.5rem;
+}
+
+.button:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.button:active {
+  background-color: gray;
+}
