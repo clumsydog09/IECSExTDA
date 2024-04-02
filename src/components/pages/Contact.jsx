@@ -16,7 +16,7 @@ export const Contact = () => {
         </div>
         <div className="mb-4">
           <h3 className=" text-2xl text-gray-400 font-bold mb-2">Email:</h3>
-          <p className="text-xl">hello@iecsemanipal.com</p>
+          <p className="text-xl">iecse.mit@manipal.edu</p>
         </div>
         <div className="mb-4">
           <h3 className=" text-2xl text-gray-400 font-bold mb-2">Instagram:</h3>
